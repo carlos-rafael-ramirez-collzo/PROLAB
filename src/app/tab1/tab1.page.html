@@ -1,0 +1,25 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      Contacto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let i of data; let index = index">
+      Item {{ index + 1 }}
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="primary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-facebook" style="color: #3b5998;"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-twitter" style="color: #1DA1F2;"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="mail" style="color: #696969;"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
